@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мои места — карта путешествий</title>
+<meta name="description" content="Отмечайте страны и города, где вы побывали, на цветной карте мира.">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root { --bg: #fff; --fg: #1d1d1f; --muted: #6e6e73; --card: #f5f5f7; --link: #4f5bd5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #000; --fg: #f5f5f7; --muted: #98989d; --card: #1c1c1e; --link: #8f99ff; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--fg); background: var(--bg); }
+  a { color: var(--link); }
+  .hero { text-align: center; padding: 56px 16px 40px; color: #fff;
+          background: linear-gradient(135deg, #33389e 0%, #6b4dd9 55%, #f27390 100%); }
+  .hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.3); }
+  .hero h1 { font-size: 40px; margin: 20px 0 8px; letter-spacing: -0.5px; }
+  .hero p { font-size: 19px; margin: 0 auto; max-width: 520px; opacity: .92; }
+  main { max-width: 900px; margin: 0 auto; padding: 0 16px 48px; }
+  .shots { display: flex; gap: 20px; justify-content: center; margin: -8px 0 40px; padding-top: 40px; overflow-x: auto; }
+  .shots figure { margin: 0; flex: 0 0 auto; text-align: center; }
+  .shots img { width: 240px; max-width: 70vw; border-radius: 32px; box-shadow: 0 12px 32px rgba(0,0,0,.18); display: block; }
+  .shots figcaption { color: var(--muted); font-size: 15px; margin-top: 12px; }
+  section { max-width: 680px; margin: 0 auto; }
+  h2 { font-size: 24px; margin-top: 40px; }
+  .faq p { background: var(--card); border-radius: 16px; padding: 14px 18px; margin: 10px 0; }
+  footer { text-align: center; color: var(--muted); font-size: 15px; padding: 32px 16px 48px; }
+  @media (max-width: 600px) { .shots { justify-content: flex-start; } .hero h1 { font-size: 32px; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="img/icon.png" alt="Иконка приложения «Мои места»">
+  <h1>Мои места</h1>
+  <p>Отмечайте страны и города, где вы побывали, — и смотрите, как ваш мир раскрашивается.</p>
+</header>
+
+<main>
+  <div class="shots">
+    <figure><img src="img/1-map.jpg" alt="Карта мира с отмеченными странами и городами" loading="lazy"><figcaption>Цветная карта ваших поездок</figcaption></figure>
+    <figure><img src="img/4-stats.jpg" alt="Статистика по континентам" loading="lazy"><figcaption>Статистика по континентам</figcaption></figure>
+    <figure><img src="img/5-paywall.jpg" alt="Разовая покупка безлимита" loading="lazy"><figcaption>Безлимит — одна покупка, без подписки</figcaption></figure>
+  </div>
+
+  <section class="faq">
+    <h2>Частые вопросы</h2>
+    <p><strong>Как отметить страну?</strong> Нажмите на неё на карте или найдите во вкладке «Места».</p>
+    <p><strong>Как добавить город?</strong> Удерживайте палец на карте или нажмите кнопку поиска. Страна города отметится автоматически.</p>
+    <p><strong>Сколько мест можно отметить бесплатно?</strong> 30 — страны и города вместе. Безлимит открывается разовой покупкой, без подписки.</p>
+    <p><strong>Покупал безлимит на другом устройстве.</strong> Вкладка «Места» → значок короны → «Восстановить покупки».</p>
+    <p><strong>Где хранятся мои отметки?</strong> Только на вашем устройстве. Подробнее — в <a href="privacy.html">политике конфиденциальности</a>.</p>
+
+    <h2>Поддержка</h2>
+    <p>Нашли ошибку или есть идея? Напишите нам в <a href="https://github.com/yurablablabla/yurablabla_moi-mesta/issues">GitHub Issues</a>.</p>
+
+    <h2 lang="en">Support (English)</h2>
+    <p lang="en">Mark the countries and cities you’ve visited on a colorful world map. Tap a country to mark it, long-press the map to add a city. 30 places are free; unlimited is a one-time purchase. To restore a purchase: “Места” tab → crown icon → “Восстановить покупки”. Questions: <a href="https://github.com/yurablablabla/yurablabla_moi-mesta/issues">GitHub Issues</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <a href="privacy.html">Политика конфиденциальности / Privacy Policy</a>
+</footer>
+</body>
+</html>
